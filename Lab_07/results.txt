@@ -1,0 +1,7 @@
+
+Bubble Sort sorted 100000 numbers in 20.6555 seconds
+Selection Sort sorted 100000 numbers in 11.048 seconds
+Insertion Sort sorted 100000 numbers in 0.000449589 seconds
+Quick Sort sorted 100000 numbers in 14.1193 seconds
+Quick Sort (with median) sorted 100000 numbers in 34.9944 seconds
+Merge Sort sorted 100000 numbers in 0.0145856 seconds.
