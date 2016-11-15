@@ -1,17 +1,18 @@
-/**     @name:AnimalPen.cpp
+/**
+* @name:AnimalPen.cpp
 *	@author: Tim Elvart
 *	KUID: 2760606
 *	Email: telvart@ku.edu
 *	@date:10.7.15
 *	@brief: Implementation of methods declared in AnimalPen.h
-*/ 
+*/
 
 #include "AnimalPen.h"
 
 AnimalPen::AnimalPen()
 {
-}
 
+}
 
 AnimalPen::~AnimalPen()
 {
@@ -20,7 +21,6 @@ AnimalPen::~AnimalPen()
 		releaseAnimal();
 	}
 }
-
 
 void AnimalPen::addAnimal(FarmAnimal* animal)
 {
@@ -34,7 +34,9 @@ FarmAnimal* AnimalPen::peekAtNextAnimal()
 
 void AnimalPen::releaseAnimal()
 {
+	FarmAnimal* temp = peek();
 	pop();
+	delete temp;
 }
 
 bool AnimalPen::isPenEmpty()

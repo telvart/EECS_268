@@ -1,10 +1,11 @@
-/**     @name:AnimalPen.h
+/**
+* @name:AnimalPen.h
 *	@author: Tim Elvart
 *	KUID: 2760606
 *	Email: telvart@ku.edu
 *	@date:10.7.15
 *	@brief: A specialized stack that holds FarmAnimal pointers
-*/ 
+*/
 
 #ifndef ANIMALPEN_H
 #define ANIMALPEN_H
@@ -55,6 +56,3 @@ class AnimalPen: public Stack<FarmAnimal*>
 	bool isPenEmpty();
 };
 #endif
-
-
-
