@@ -70,10 +70,10 @@ void MazeReader::readMaze() throw (MazeCreationException)
 			throw MazeCreationException("Invalid dimensions for the maze");
 		}
 		if (m_startRow>m_rows || m_startCol>m_cols)
-		{	
+		{
 			throw MazeCreationException("Starting location is out of bounds");
 		}
-		
+
 		m_maze=new char*[m_rows];
 
 		for (int i=0;i<m_rows;i++)
@@ -94,14 +94,3 @@ void MazeReader::readMaze() throw (MazeCreationException)
 		throw MazeCreationException("The file does not exist");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

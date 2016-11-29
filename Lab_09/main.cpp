@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 	Test Tester;
 	bool exitfound;
 	ArrayHelper<int> visitedPrinter;
-//	For some reason main wont work and i get seg faults, but the test class works fine idk. 
+//	For some reason main wont work and i get seg faults, but the test class works fine idk.
 //	on earlier attempts main worked fine but now i just get seg faults, i dont think its coming from mazewalker
 //
 
@@ -53,7 +53,7 @@ int main(int argc, char** argv)
 				std::cout<<"\nStarting Position: "<<reader.getStartRow()<<", "<<reader.getStartCol()
 					 <<"\nSize: "<<reader.getRows()<<", "<<reader.getCols()<<"\n";
 				//printarray(walker.getVisited(),walker.getVisitedRows(),walker.getVisitedCols());
-				visitedprinter.print2DArray(walker.getVisited(), walker.getVisitedRows(),walker.getVisitedCols(),"  ");
+				visitedPrinter.print2DArray(walker.getVisited(), walker.getVisitedRows(),walker.getVisitedCols(),"  ");
 			}
 			else if (mode=="-bfs")
 			{
@@ -62,27 +62,27 @@ int main(int argc, char** argv)
 
 				std::cout<<"\nStarting Position: "<<reader.getStartRow()<<", "<<reader.getStartCol()
 					 <<"\nSize: "<<reader.getRows()<<", "<<reader.getCols()<<"\n";
-				visitedprinter.print2DArray(walker.getVisited(), walker.getVisitedRows(),walker.getVisitedCols(),"  ");			
+				visitedPrinter.print2DArray(walker.getVisited(), walker.getVisitedRows(),walker.getVisitedCols(),"  ");			
 			}
-			
-			
+
+
 			if (exitfound)
 			{
 				std::cout<<"\nWe escaped the maze!\n";
 			}
-			else 
+			else
 			{
 				std::cout<<"\nThere was no way out!\n";
 			}
-		
+
 		}
 		catch(MazeCreationException& e)
 		{
 			std::cout<<"\n"<<e.what();
 		}
-	
+
 	}
-	
+
 	return 0;
 
 }
